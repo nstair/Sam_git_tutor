@@ -222,7 +222,7 @@ extern "C" SharedWavefunction mp2so_plug(SharedWavefunction ref_wfn, Options& op
     outfile->Printf("    RHF total energy         %20.12f\n", rhf_energy);
     outfile->Printf("    MP2 correlation energy   %20.12f\n", mp2_energy);
     outfile->Printf("    MP2 total energy         %20.12f\n", rhf_energy + mp2_energy);
-
+    outfile->Printf("    World: "Hello Nick");
     Process::environment.globals["CURRENT ENERGY"] = rhf_energy + mp2_energy;
 
     return ref_wfn;
